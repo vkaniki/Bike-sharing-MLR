@@ -37,11 +37,13 @@ We are required to model the demand for shared bikes with the available independ
 
 In the dataset provided, We will notice that there are three columns named 'casual', 'registered', and 'cnt'. The variable 'casual' indicates the number casual users who have made a rental. The variable 'registered' on the other hand shows the total number of registered users who have made a booking on a given day. Finally, the 'cnt' variable indicates the total number of bike rentals, including both casual and registered. The model should be built taking this 'cnt' as the target variable.
 
-BUILDING A LINEAR MODEL
+### BUILDING A LINEAR MODEL
 
-Recursive feature elimination: We will be using the **** LinearRegression function from SciKit Learn **** for its compatibility with RFE (which is a utility from sklearn)
+### Recursive feature elimination: 
 
-Building Linear Model using 'STATS MODEL'
+- We will be using the **** LinearRegression function from SciKit Learn **** for its compatibility with RFE (which is a utility from sklearn)
+
+- Building Linear Model using 'STATS MODEL'
 
 ### Model Evaluation
 
@@ -66,23 +68,26 @@ Please don't forget to perform this step as the R-squared score on the test set 
 
 As per our final Model, the top 3 predictor variables that influences the bike booking are:
 
-Temperature (temp) - A coefficient value of ‘0.563445’ indicated that a unit increase in temp variable increases the bike hire numbers by 0.563445 units.
-Weather Situation 3 (weathersit_3) - A coefficient value of ‘-0.301879’ indicated that, w.r.t Weathersit1, a unit increase in * Weathersit3 variable decreases the bike hire numbers by 0.301879 units.
-Year (yr) - A coefficient value of ‘0.231012’ indicated that a unit increase in yr variable increases the bike hire numbers by 0.231012 units.
+- Temperature (temp) - A coefficient value of ‘0.563445’ indicated that a unit increase in temp variable increases the bike hire numbers by 0.563445 units.
+- Weather Situation 3 (weathersit_3) - A coefficient value of ‘-0.301879’ indicated that, w.r.t Weathersit1, a unit increase in * Weathersit3 variable decreases the bike hire numbers by 0.301879 units.
+- Year (yr) - A coefficient value of ‘0.231012’ indicated that a unit increase in yr variable increases the bike hire numbers by 0.231012 units.
+
 So, it's suggested to consider these variables utmost importance while planning, to achive maximum Booking The next best features that can also be considered are
 
-season_4: - A coefficient value of ‘0.126749’ indicated that w.r.t season_1, a unit increase in season_4 variable increases the bike hire numbers by 0.126749 units.
-windspeed: - A coefficient value of ‘-0.157640’ indicated that, a unit increase in windspeed variable decreases the bike hire numbers by 0.157640 units.
-NOTE:
+- season_4: - A coefficient value of ‘0.126749’ indicated that w.r.t season_1, a unit increase in season_4 variable increases the bike hire numbers by 0.126749 units.
+- windspeed: - A coefficient value of ‘-0.157640’ indicated that, a unit increase in windspeed variable decreases the bike hire numbers by 0.157640 units.
+
+### NOTE:
+
 The details of weathersit_1 & weathersit_3
 
-weathersit_1: Clear, Few clouds, Partly cloudy, Partly cloudy
+- weathersit_1: Clear, Few clouds, Partly cloudy, Partly cloudy
 
-weathersit_3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds
+- weathersit_3: Light Snow, Light Rain + Thunderstorm + Scattered clouds, Light Rain + Scattered clouds
 
 The details of season1 & season4
-season1: spring
+- season1: spring
 
-season4: winter
+- season4: winter
 
 
